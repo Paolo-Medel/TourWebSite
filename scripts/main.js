@@ -5,18 +5,18 @@ import { venueList } from "./venues.js";
 const mainContainer = document.querySelector("#container");
 
 const applicationHTML = `
-<h1>Brewed Awakenings</h1>
-<article>
+<h1>Tour Manager</h1>
+<article class="gigs">
     <h2>GIGS</h2>
     ${bookingHTML()}
 </article>
 
-<article>
-    <section>
+<article class="flex">
+    <section class="column">
         <h2>Venues</h2>
         ${venueList()}
     </section>
-    <section>
+    <section class="column">
         <h2>Bands</h2>
         ${bandList()}
     </section>
